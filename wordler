@@ -1,4 +1,4 @@
-wordOfTheDay = goats
+wordOfTheDay = "goats"
 for i in range (6):
   userInput = input("Guess the Word (5 letters): ")
   correct = ["","","","",""]
