@@ -1,0 +1,21 @@
+wordOfTheDay = goats
+for i in range (6):
+  userInput = input("Guess the Word (5 letters): ")
+  correct = ["","","","",""]
+  for k in range (len(userInput)):
+    if userInput[k] == wordOfTheDay[k]:
+      correct[k] = "green"
+    elif wordOfTheDay.find(userInput[k]) > -1:
+      correct[k] = "yellow"
+    else:
+      correct[k] = "black"
+  print(correct)
+  sewey = True
+  for j in correct:
+    if j != "green":
+      sewey = False
+  if sewey:
+    print("Good Job Goofs")
+    break
+if not sewey:
+  print("u lose")
